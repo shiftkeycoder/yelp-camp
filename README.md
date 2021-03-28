@@ -1,6 +1,7 @@
 # YelpCamp
 
-- [ ] Creating the basic express app
+- [x] Creating the Basic Express App
+- [ ] Campground Model Basics 
 
 ## Express App
 ```bash
