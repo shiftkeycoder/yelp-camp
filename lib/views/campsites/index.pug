@@ -7,7 +7,8 @@ html(lang="en")
   body 
     header 
       h1 All Campsites
+    a(href="/campsites/new") New Campsite
     ul  
       each record in data 
         li 
-          a(href='campsites/'+record._id) #{record.title}
+          a(href='/campsites/'+record._id) #{record.title}
