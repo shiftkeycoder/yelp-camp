@@ -19,5 +19,8 @@ html(lang="en")
     footer 
       p
         a(href="/campsites/"+record._id+"/edit") Edit &nbsp;
+      div 
+        form(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
+          button Delete 
       p
         a(href="/campsites") Back to Campsites Page  
