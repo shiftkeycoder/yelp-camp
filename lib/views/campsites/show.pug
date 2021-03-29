@@ -7,14 +7,17 @@ html(lang="en")
   body 
     header 
       h1 #{record.title} 
-      p 
-        strong Price: 
-        span #{record.price} 
-      p 
-        strong Description: 
-        span #{record.description} 
-      p 
-        strong Location: 
-        span #{record.location} 
-      footer 
+    p 
+      strong Price: 
+      span #{record.price} 
+    p 
+      strong Description: 
+      span #{record.description} 
+    p 
+      strong Location: 
+      span #{record.location} 
+    footer 
+      p
+        a(href="/campsites/"+record._id+"/edit") Edit &nbsp;
+      p
         a(href="/campsites") Back to Campsites Page  
