@@ -4,7 +4,7 @@
   "description": "Web App",
   "main": "yelpcamp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon yelpcamp.js"
   },
   "author": "CalebH.",
   "license": "ISC",
