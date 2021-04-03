@@ -1,25 +1,55 @@
 html(lang="en")
   head
     meta(charset="UTF-8")
+    title Edit Page
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Edit Page
-  body 
+    link(rel="shortcut icon" href="../../icons/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="../../icons/favicon.ico" type="image/x-icon")
+    link(href="../../main.2a2d10e412a0372260aa.css" rel="stylesheet")
+  body  
     header 
-      h1 Edit Campsite
-    form(action="/campsites/"+record._id+"?_method=PUT", method="post") 
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        .container
+          a.navbar-brand(href="/") YelpCamp 
+            button.navbar-toggler(
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation")
+              span.navbar-toggler-icon
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul.navbar-nav.mr-auto.ml-auto
+              li.nav-item.active
+                a.nav-link(href="/") Home
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href="/campsites") Campsites
+              li.nav-item
+                a.nav-link(href="/campsites/new") New Campsite
+    .container.my-5.pt-5 
       div 
-        label(for="title") Title
-        input(type="text" id="title" name="campsite[title]" value=record.title)
-      div 
-        label(for="price") Price
-        input(type="text" id="price" name="campsite[price]" value=record.price)
-      div 
-        label(for="description") Description
-        input(type="text" id="description" name="campsite[description]" value=record.description)
-      div 
-        label(for="location") Location
-        input(type="text" id="location" name="campsite[location]" value=record.location)
-      button Submit
-    div
-      a(href="/campsites/"+record._id) Back to Campsite 
+        a(href="/campsites/"+record._id) Back to Campsite
+      form(action="/campsites/"+record._id+"?_method=PUT", method="post") 
+        .mb-3 
+          label.form-label(for="title") Title
+          input.form-control(type="text" id="title" name="campsite[title]" value=record.title)
+        .mb-3 
+          label.form-label(for="image") Image URL
+          input.form-control(type="text" id="image" name="campsite[image]" value=record.image)
+        .mb-3 
+          label.form-label(for="price") Price
+          .input-group 
+              span.input-group-text(id="price-label") $
+              input.form-control(type="text" id="price" name="campsite[price]" value=record.price)
+        .mb-3 
+          label.form-label(for="description") Description
+          textarea.form-control(cols="30", rows="10" type="text" id="description" name="campsite[description]") #{record.description}
+        .mb-3  
+          label.form-label(for="location") Location
+          input.form-control(type="text" id="location" name="campsite[location]" value=record.location)
+        button.btn.btn-info(type="submit") Update Campsite
+    footer.footer.fixed-bottom
+      p.footer__text.text-muted &copy;YelpCamp 2021 all rights reserved

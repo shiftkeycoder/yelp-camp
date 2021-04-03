@@ -1,14 +1,47 @@
 html(lang="en")
   head
     meta(charset="UTF-8")
+    title Campsites
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Campsites
-  body 
+    link(rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="icons/favicon.ico" type="image/x-icon")
+    link(href="main.2a2d10e412a0372260aa.css" rel="stylesheet")
+  body
     header 
-      h1 All Campsites
-    a(href="/campsites/new") New Campsite
-    ul  
+       nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
+        .container
+          a.navbar-brand(href="/") YelpCamp 
+            button.navbar-toggler(
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation")
+              span.navbar-toggler-icon
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul.navbar-nav.mr-auto.ml-auto
+              li.nav-item.active
+                a.nav-link(href="/") Home
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href="/campsites") Campsites
+              li.nav-item
+                a.nav-link(href="/campsites/new") New Campsite
+    .container.my-5.pt-5   
       each record in data 
-        li 
-          a(href='/campsites/'+record._id) #{record.title}
+        .card.mb-3
+          .row 
+            .col-md-4  
+              img.img-fluid(src=record.image alt="campsite") 
+            .col-md-8 
+              .card-body 
+                h5.card-title #{record.title}
+                p.card-text #{record.description}
+                p.card-text 
+                  small.text-muted #{record.location}
+                a.btn.btn-primary(href='/campsites/'+record._id) View #{record.title}
+
+    footer(class="footer fixed-bottom")
+      p.footer__text.text-muted &copy;YelpCamp 2021 all rights reserved

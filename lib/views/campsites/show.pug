@@ -1,26 +1,47 @@
 html(lang="en")
   head
     meta(charset="UTF-8")
+    title Show Page
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Show Page
+    link(rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="../icons/favicon.ico" type="image/x-icon")
+    link(href="../main.2a2d10e412a0372260aa.css" rel="stylesheet")
   body 
     header 
-      h1 #{record.title} 
-    p 
-      strong Price: 
-      span #{record.price} 
-    p 
-      strong Description: 
-      span #{record.description} 
-    p 
-      strong Location: 
-      span #{record.location} 
-    footer 
-      p
-        a(href="/campsites/"+record._id+"/edit") Edit &nbsp;
-      div 
-        form(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
-          button Delete 
-      p
-        a(href="/campsites") Back to Campsites Page  
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        .container
+          a.navbar-brand(href="/") YelpCamp 
+            button.navbar-toggler(
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation")
+              span.navbar-toggler-icon
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul.navbar-nav.mr-auto.ml-auto
+              li.nav-item.active
+                a.nav-link(href="/") Home
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href="/campsites") Campsites
+              li.nav-item
+                a.nav-link(href="/campsites/new") New Campsite
+    .col-6.offset-3 
+      .card.mt-3.mb-5   
+        img.card-img-top(src=record.image, alt="campsite")
+        .card-body
+          h3.card-title #{record.title} 
+          p.card-text #{record.description}
+        ul.list-group.list-group-flush 
+          li.list-group-item 
+            span.text-muted #{record.location}
+          li.list-group-item $#{record.price}.00
+        .card-body  
+          a.card-link.btn.btn-warning(href="/campsites/"+record._id+"/edit" role="button") Edit
+          form.d-inline(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
+            button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
+    footer.footer.fixed-bottom
+      p.footer__text.text-muted &copy;YelpCamp 2021 all rights reserved
