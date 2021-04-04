@@ -6,50 +6,50 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="shortcut icon" href="../../icons/favicon.ico" type="image/x-icon")
     link(rel="icon" href="../../icons/favicon.ico" type="image/x-icon")
-    link(href="../../main.2a2d10e412a0372260aa.css" rel="stylesheet")
-  body  
-    header 
-      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-        .container
-          a.navbar-brand(href="/") YelpCamp 
-            button.navbar-toggler(
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation")
-              span.navbar-toggler-icon
-          .collapse.navbar-collapse(id="navbarSupportedContent")
-            ul.navbar-nav.mr-auto.ml-auto
-              li.nav-item.active
-                a.nav-link(href="/") Home
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href="/campsites") Campsites
-              li.nav-item
-                a.nav-link(href="/campsites/new") New Campsite
+    link(href="../../main.710abf4c7592553fc7f8.css" rel="stylesheet")
+  body
+    script(src="../../form-validation.js")   
+    include header.pug 
     .container.my-5.pt-5 
       div 
         a(href="/campsites/"+record._id) Back to Campsite
-      form(action="/campsites/"+record._id+"?_method=PUT", method="post") 
+      form.validated-form(action="/campsites/"+record._id+"?_method=PUT", method="post" novalidate) 
         .mb-3 
           label.form-label(for="title") Title
-          input.form-control(type="text" id="title" name="campsite[title]" value=record.title)
+          input.form-control(type="text" id="title" name="campsite[title]" value=record.title required)
+          .valid-feedback 
+              p Looks good!
+          .invalid-feedback 
+              p This field is required 
         .mb-3 
           label.form-label(for="image") Image URL
-          input.form-control(type="text" id="image" name="campsite[image]" value=record.image)
+          input.form-control(type="text" id="image" name="campsite[image]" value=record.image required)
+          .valid-feedback 
+              p Looks good!
+          .invalid-feedback 
+              p This field is required 
         .mb-3 
           label.form-label(for="price") Price
           .input-group 
               span.input-group-text(id="price-label") $
-              input.form-control(type="text" id="price" name="campsite[price]" value=record.price)
+              input.form-control(type="text" id="price" name="campsite[price]" value=record.price required)
+              .valid-feedback 
+                p Looks good!
+              .invalid-feedback 
+                p This field is required 
         .mb-3 
           label.form-label(for="description") Description
-          textarea.form-control(cols="30", rows="10" type="text" id="description" name="campsite[description]") #{record.description}
+          textarea.form-control(cols="30", rows="5" type="text" id="description" name="campsite[description]" required) #{record.description}
+          .valid-feedback 
+            p Looks good!
+          .invalid-feedback 
+            p This field is required 
         .mb-3  
           label.form-label(for="location") Location
-          input.form-control(type="text" id="location" name="campsite[location]" value=record.location)
+          input.form-control(type="text" id="location" name="campsite[location]" value=record.location required)
+          .valid-feedback 
+            p Looks good!
+          .invalid-feedback 
+            p This field is required 
         button.btn.btn-info(type="submit") Update Campsite
-    footer.footer.fixed-bottom
-      p.footer__text.text-muted &copy;YelpCamp 2021 all rights reserved
+    include footer.pug 

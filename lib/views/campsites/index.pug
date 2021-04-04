@@ -6,29 +6,9 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon")
     link(rel="icon" href="icons/favicon.ico" type="image/x-icon")
-    link(href="main.2a2d10e412a0372260aa.css" rel="stylesheet")
+    link(href="main.710abf4c7592553fc7f8.css" rel="stylesheet")
   body
-    header 
-       nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
-        .container
-          a.navbar-brand(href="/") YelpCamp 
-            button.navbar-toggler(
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation")
-              span.navbar-toggler-icon
-          .collapse.navbar-collapse(id="navbarSupportedContent")
-            ul.navbar-nav.mr-auto.ml-auto
-              li.nav-item.active
-                a.nav-link(href="/") Home
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href="/campsites") Campsites
-              li.nav-item
-                a.nav-link(href="/campsites/new") New Campsite
+    include header.pug
     .container.my-5.pt-5   
       each record in data 
         .card.mb-3
@@ -42,6 +22,4 @@ html(lang="en")
                 p.card-text 
                   small.text-muted #{record.location}
                 a.btn.btn-primary(href='/campsites/'+record._id) View #{record.title}
-
-    footer(class="footer fixed-bottom")
-      p.footer__text.text-muted &copy;YelpCamp 2021 all rights reserved
+    include footer.pug 

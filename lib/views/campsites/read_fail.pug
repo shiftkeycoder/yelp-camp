@@ -1,0 +1,26 @@
+- var msg = "I'm sorry. I couldn't find any campsites in the database.";
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title YelpCamp: ERROR
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="icons/favicon.ico" type="image/x-icon")
+    link(href="main.710abf4c7592553fc7f8.css" rel="stylesheet")
+  body
+    include header.pug
+    .container.my-5.pt-5 
+      .alert.alert-danger(role="alert")
+        h4.alert-heading.text-center 
+          span.mr-3 ERROR
+          span.fas.fa-exclamation-square 
+        hr 
+        p.mb-0.text-center #{status} #{message}
+      .alert.alert-light(role="alert")
+        p.mb-1 
+          span.fas.fa-bug
+          span.ml-1 #{msg}
+        hr 
+        p.mb-1 #{stack}        
+    include footer.pug  

@@ -1,0 +1,21 @@
+header 
+       nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
+        .container
+          a.navbar-brand(href="/") YelpCamp 
+            button.navbar-toggler(
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation")
+              span.navbar-toggler-icon
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul.navbar-nav.mr-auto.ml-auto
+              li.nav-item.active
+                a.nav-link(href="/") Home
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href="/campsites") Campsites
+              li.nav-item
+                a.nav-link(href="/campsites/new") New Campsite
