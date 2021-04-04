@@ -12,7 +12,9 @@ html(lang="en")
     include header.pug 
     .container.my-5.pt-5 
       div 
-        a(href="/campsites/"+record._id) Back to Campsite
+        a(href="/campsites/"+record._id) 
+          span.fal.fa-house-return.mr-2  
+          span Back to Campsite
       form.validated-form(action="/campsites/"+record._id+"?_method=PUT", method="post" novalidate) 
         .mb-3 
           label.form-label(for="title") Title
