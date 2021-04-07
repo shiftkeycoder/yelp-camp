@@ -7,20 +7,47 @@ html(lang="en")
     link(rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon")
     link(rel="icon" href="../icons/favicon.ico" type="image/x-icon")
     link(href="../main.710abf4c7592553fc7f8.css" rel="stylesheet")
-  body 
+  body
+    script(src="../form-validation.js") 
     include header.pug 
-    .col-6.offset-3.pt-5  
-      .card.mt-3.mb-5   
-        img.card-img-top(src=record.image, alt="campsite")
-        .card-body
-          h3.card-title #{record.title} 
-          p.card-text #{record.description}
-        ul.list-group.list-group-flush 
-          li.list-group-item 
-            span.text-muted #{record.location}
-          li.list-group-item $#{record.price}.00
-        .card-body  
-          a.card-link.btn.btn-warning(href="/campsites/"+record._id+"/edit" role="button") Edit
-          form.d-inline(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
-            button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
+    .row.d-flex.justify-content-center.m-auto.mb-5.pb-5 
+      .col-4.pt-5  
+        .card.mt-3.mb-3    
+          img.card-img-top(src=record.image alt="campsite")
+          .card-body
+            h3.card-title #{record.title} 
+            p.card-text #{record.description}
+          ul.list-group.list-group-flush 
+            li.list-group-item 
+              span.text-muted #{record.location}
+            li.list-group-item $#{record.price}.00
+          .card-body  
+            a.card-link.btn.btn-warning(href="/campsites/"+record._id+"/edit" role="button") Edit
+            form.d-inline(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
+              button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
+      .col-4.mt-3.pt-5
+        h2 Leave a Review 
+        form.mb-3.validated-form(action="/campsites/"+record._id+"/reviews", method="post" novalidate) 
+          .mb-2
+            label.form-label(for="body") Review 
+            textarea#body.form-control(name="review[body]", cols="30", rows="3" required)
+            .valid-feedback 
+                p Looks good!
+            .invalid-feedback 
+              p This field is required
+          .mb-2
+            label.form-label(for="rating") Rating 
+            input#rating.form-range(type="range", name="review[rating]" min="1" max="5")
+          button.btn.btn-success(type="submit") Submit 
+        hr 
+        .pt-3 
+          each review in record.reviews
+            .card.mb-3 
+              .card-body
+                h5.card-title  
+                  span.text-info #{review.rating} 
+                  span.fal.fa-star.text-warning 
+                p.card-text #{review.body}
+                form(action="/campsites/"+record._id+"/reviews/"+review._id+"?_method=DELETE", method="post") 
+                  button.btn.btn-sm.btn-danger Delete 
     include footer.pug 
