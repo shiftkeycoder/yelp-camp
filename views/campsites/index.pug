@@ -9,7 +9,8 @@ html(lang="en")
     link(href="main.710abf4c7592553fc7f8.css" rel="stylesheet")
   body
     include header.pug
-    .container.my-5.pt-5   
+    .container.my-5.pt-5
+      p.text-success #{flash}   
       each record in data 
         .card.mb-3
           .row 

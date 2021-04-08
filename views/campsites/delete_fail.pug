@@ -1,4 +1,3 @@
-- var msg = "I'm sorry. I could not remove this campsite. The campsite may no longer exist. Please refresh your browser.";
 html(lang="en")
   head
     meta(charset="UTF-8")
@@ -20,7 +19,7 @@ html(lang="en")
       .alert.alert-light(role="alert")
         p.mb-1 
           span.fas.fa-bug
-          span.ml-1 #{msg}
+          span.ml-1 #{ERROR_MSG}
         hr 
         p.mb-1 #{stack}        
     include footer.pug   

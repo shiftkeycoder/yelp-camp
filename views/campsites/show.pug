@@ -8,6 +8,9 @@ html(lang="en")
     link(rel="icon" href="../icons/favicon.ico" type="image/x-icon")
     link(href="../main.710abf4c7592553fc7f8.css" rel="stylesheet")
   body
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous")
     script(src="../form-validation.js") 
     include header.pug 
     .row.d-flex.justify-content-center.m-auto.mb-5.pb-5 
@@ -39,14 +42,26 @@ html(lang="en")
             label.form-label(for="rating") Rating 
             input#rating.form-range(type="range", name="review[rating]" min="1" max="5")
           button.btn.btn-success(type="submit") Submit 
-        hr 
+        hr
+        - var alertOK =OK_MSG;
+        if (alertOK && alertOK.length)
+          .alert.alert-success.alert-dismissible.fade.show(role="alert")
+            strong #{OK_MSG}
+            button.close(type="button" data-dismiss="alert" aria-label="Close") 
+              span(aria-hidden="true") &times;
+        - var alertERROR =ERROR_MSG;
+        if (alertERROR && alertERROR.length)
+          .alert.alert-danger.alert-dismissible.fade.show(role="alert")
+            strong #{ERROR_MSG}
+            button.close(type="button" data-dismiss="alert" aria-label="Close") 
+              span(aria-hidden="true") &times;
         .pt-3 
           each review in record.reviews
             .card.mb-3 
               .card-body
-                h5.card-title  
-                  span.text-info #{review.rating} 
-                  span.fal.fa-star.text-warning 
+                h5.card-title 
+                  - for (var x=0; x < review.rating; x++) 
+                    span.fal.fa-star.text-warning 
                 p.card-text #{review.body}
                 form(action="/campsites/"+record._id+"/reviews/"+review._id+"?_method=DELETE", method="post") 
                   button.btn.btn-sm.btn-danger Delete 
