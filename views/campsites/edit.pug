@@ -1,20 +1,18 @@
+- var ICON = "../../icons/favicon.ico";
+- var CSS = "../../main.cb6d322ebb9fa0dbd79f.css";
+- var FORM = "../../form-validation.js";
+- var TITLE = "YelpCamp: Camp Edit";
 html(lang="en")
-  head
-    meta(charset="UTF-8")
-    title Edit Page
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="shortcut icon" href="../../icons/favicon.ico" type="image/x-icon")
-    link(rel="icon" href="../../icons/favicon.ico" type="image/x-icon")
-    link(href="../../main.710abf4c7592553fc7f8.css" rel="stylesheet")
+  include ../lib/head.pug 
   body
-    script(src="../../form-validation.js")   
-    include header.pug 
+    script(src=VENDOR) 
+    include ../lib/vendor.pug  
+    include ../lib/header.pug 
     .container.my-5.pt-5 
       div 
         a(href="/campsites/"+record._id) 
           span.fal.fa-house-return.mr-2  
-          span Back to Campsite
+          span Back to Member
       form.validated-form(action="/campsites/"+record._id+"?_method=PUT", method="post" novalidate) 
         .mb-3 
           label.form-label(for="title") Title
@@ -54,4 +52,4 @@ html(lang="en")
           .invalid-feedback 
             p This field is required 
         button.btn.btn-info(type="submit") Update Campsite
-    include footer.pug 
+    include ../lib/footer.pug 

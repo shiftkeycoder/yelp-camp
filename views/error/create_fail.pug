@@ -1,11 +1,10 @@
-- var ICON = "icons/favicon.ico";
-- var CSS = "main.cb6d322ebb9fa0dbd79f.css";
-- var MSG = "I'm sorry. I could not find the page you are looking for.";
-- var TITLE = "ERROR";
+- var ICON = "../icons/favicon.ico";
+- var CSS = "../main.cb6d322ebb9fa0dbd79f.css";
+- var TITLE = "YelpCamp: ERROR";
 html(lang="en")
-  include ../lib/head.pug 
+  include ../lib/head
   body
-    include ../lib/vendor.pug
+    include ../lib/vendor.pug 
     include ../lib/header.pug
     .container.my-5.pt-5 
       .alert.alert-danger(role="alert")
@@ -17,7 +16,7 @@ html(lang="en")
       .alert.alert-light(role="alert")
         p.mb-1 
           span.fas.fa-bug
-          span.ml-1 #{MSG}
+          span.ml-1 #{ERROR_MSG}
         hr 
         p.mb-1 #{stack}        
     include ../lib/footer.pug 

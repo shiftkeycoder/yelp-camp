@@ -1,6 +1,6 @@
 - var ICON = "icons/favicon.ico";
 - var CSS = "main.cb6d322ebb9fa0dbd79f.css";
-- var TITLE = "YelpCamp: Campsites";
+- var TITLE = "YelpCamp: Members";
 html(lang="en")
   include ../lib/head.pug 
   body
@@ -13,16 +13,17 @@ html(lang="en")
         button.close(type="button" data-dismiss="alert" aria-label="Close") 
           span(aria-hidden="true") &times;
     .container.my-5.pt-5
+      h1.text-center 
+            span.fad.fa-users.mr-2 
+            span YelpCamp: Members 
       each record in data 
-        .card.mb-3
-          .row 
-            .col-md-4  
-              img.img-fluid(src=record.image alt="campsite") 
-            .col-md-8 
-              .card-body 
-                h5.card-title #{record.title}
-                p.card-text #{record.description}
-                p.card-text 
-                  small.text-muted #{record.location}
-                a.btn.btn-primary(href='/campsites/'+record._id) View #{record.title}
+        .card.mb-3.col-8.m-auto
+          .card-body
+            .row
+              .col-6  
+                h2.card-title    
+                  span.fad.fa-user.mr-2
+                  small #{record.username}
+              .col-6
+                a.card-link.btn.btn-primary.ml-5(href='/members/'+record._id) View #{record.title}
     include ../lib/footer.pug 

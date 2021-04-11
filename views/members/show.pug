@@ -1,0 +1,51 @@
+- var ICON = "../icons/favicon.ico";
+- var CSS = "../main.cb6d322ebb9fa0dbd79f.css";
+- var TITLE = "YelpCamp: Member Info";
+- var PASSWORD = PSWD;
+html(lang="en")
+  include ../lib/head.pug 
+  body
+    include ../lib/vendor.pug
+    script(src=FORM) 
+    include ../lib/header.pug 
+    - var alertOK =OK_MSG;
+    if (alertOK && alertOK.length)
+      .alert.alert-success.alert-dismissible.fade.show(role="alert")
+        strong #{OK_MSG}
+        button.close(type="button" data-dismiss="alert" aria-label="Close") 
+          span(aria-hidden="true") &times;
+    - var alertERROR =ERROR_MSG;
+    if (alertERROR && alertERROR.length)
+      .alert.alert-danger.alert-dismissible.fade.show(role="alert")
+        strong #{ERROR_MSG}
+        button.close(type="button" data-dismiss="alert" aria-label="Close") 
+          span(aria-hidden="true") &times;
+    .row.m-auto.mt-5.pt-5
+      .col-6.offset-3 
+        h1.text-center 
+          span.fad.fa-info-square.mr-2 
+          span Member Information 
+        .card.mt-3.mb-3 
+          h2.card-title.text-right.mr-5    
+            span.fad.fa-user.mr-2
+            span #{record.username}
+          ul.list-group
+            li.list-group-item 
+              span.fad.fa-id-badge.mr-2
+              strong ID: 
+              span.text-primary #{record._id}
+            if (PASSWORD && PASSWORD.length)
+              li.list-group-item 
+                span.fad.fa-unlock.mr-2 
+                strong Password: 
+                span.text-primary #{PASSWORD}
+                span.text-muted.ml-5 (temporarily shown here)
+            li.list-group-item 
+              span.fad.fa-key.mr-2
+              strong Key: 
+              span.text-primary #{record.password}
+          .my-2.pl-2
+            a.card-link.btn.btn-warning(href="/members/"+record._id+"/edit" role="button") Edit
+            form.d-inline(action="/members/"+record._id+"?_method=DELETE" method="post") 
+              button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
+    include ../lib/footer.pug 

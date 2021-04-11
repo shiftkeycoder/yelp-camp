@@ -1,0 +1,30 @@
+- var ICON = "../icons/favicon.ico";
+- var CSS = "../main.cb6d322ebb9fa0dbd79f.css";
+- var FORM = "../form-validation.js";
+- var TITLE = "YelpCamp: Register";
+html(lang="en")
+  include ../lib/head.pug 
+  body
+    include ../lib/vendor.pug
+    script(src=FORM) 
+    include ../lib/header.pug 
+    .container.my-5.pt-5  
+      h1.text-center Registration Form 
+      .col-6.offset-3  
+        form.validated-form(action="/members", method="post" novalidate) 
+          .mb-3 
+            label.form-label(for="username") Enter Username  
+            input.form-control(type="text" id="username" placeholder="username" name="member[username]" required)
+            .valid-feedback 
+              p Looks good!
+            .invalid-feedback 
+              p This field is required 
+          .mb-3 
+            label.form-label(for="password") Enter Password 
+            input.form-control(type="password" id="password" placeholder="password" name="member[password]" required)
+            .valid-feedback 
+              p Looks good!
+            .invalid-feedback 
+              p This field is required
+          button.btn.btn-success(type="submit") Sign Up   
+    include ../lib/footer.pug       

@@ -1,0 +1,38 @@
+- var ICON = "../icons/favicon.ico";
+- var CSS = "../main.cb6d322ebb9fa0dbd79f.css";
+- var FORM = "../form-validation.js";
+- var TITLE = "Member: Login";
+html(lang="en")
+  include ../lib/head.pug 
+  body
+    include ../lib/vendor.pug
+    script(src=FORM) 
+    include ../lib/header.pug
+    - var alertERROR =ERROR_MSG;
+    if (alertERROR && alertERROR.length)
+      .alert.alert-danger.alert-dismissible.fade.show(role="alert")
+        strong #{ERROR_MSG}
+        button.close(type="button" data-dismiss="alert" aria-label="Close") 
+          span(aria-hidden="true") &times; 
+    .container.my-5.pt-5  
+      h1.text-center 
+        span.fad.fa-sign-in-alt.mr-2  
+        span Log In  
+      .col-6.offset-3  
+        form.validated-form(action="/members/auth", method="post" novalidate) 
+          .mb-3 
+            label.form-label(for="username") Enter Username  
+            input.form-control(type="text" id="username" placeholder="username" name="member[username]" required)
+            .valid-feedback 
+              p Looks good!
+            .invalid-feedback 
+              p This field is required 
+          .mb-3 
+            label.form-label(for="password") Enter Password 
+            input.form-control(type="password" id="password" placeholder="password" name="member[password]" required)
+            .valid-feedback 
+              p Looks good!
+            .invalid-feedback 
+              p This field is required
+          button.btn.btn-success(type="submit") Log In    
+    include ../lib/footer.pug       
