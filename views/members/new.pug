@@ -20,11 +20,18 @@ html(lang="en")
             .invalid-feedback 
               p This field is required 
           .mb-3 
+            label.form-label(for="email") Enter Email  
+            input.form-control(type="email" id="email" placeholder="email" name="member[email]" required)
+            .valid-feedback 
+              p Looks good!
+            .invalid-feedback 
+              p This field is required 
+          .mb-3 
             label.form-label(for="password") Enter Password 
             input.form-control(type="password" id="password" placeholder="password" name="member[password]" required)
             .valid-feedback 
               p Looks good!
             .invalid-feedback 
               p This field is required
-          button.btn.btn-success(type="submit") Sign Up   
+          button.btn.btn-success(type="submit") Register    
     include ../lib/footer.pug       

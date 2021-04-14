@@ -20,14 +20,21 @@ html(lang="en")
         form.validated-form(action="/members/"+record._id+"?_method=PUT", method="post" novalidate) 
           .mb-3 
             label.form-label(for="username") Update Username  
-            input.form-control(type="text" id="username"  name="member[username]" value=record.username required)
+            input.form-control(type="text" id="username"  name="username" value=record.username required)
+            .valid-feedback 
+                p Looks good!
+            .invalid-feedback 
+                p This field is required 
+          .mb-3 
+            label.form-label(for="email") Update Email   
+            input.form-control(type="email" id="email"  name="email" value=record.email required)
             .valid-feedback 
                 p Looks good!
             .invalid-feedback 
                 p This field is required 
           .mb-3 
             label.form-label(for="password") Update Password 
-            input.form-control(type="password" id="password" placeholder="password" name="member[password]" required)
+            input.form-control(type="password" id="password" placeholder="password" name="password" required)
             .valid-feedback 
                 p Looks good!
             .invalid-feedback 

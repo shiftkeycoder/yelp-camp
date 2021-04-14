@@ -1,7 +1,6 @@
 - var ICON = "../icons/favicon.ico";
 - var CSS = "../main.cb6d322ebb9fa0dbd79f.css";
 - var TITLE = "YelpCamp: Member Info";
-- var PASSWORD = PSWD;
 html(lang="en")
   include ../lib/head.pug 
   body
@@ -34,16 +33,10 @@ html(lang="en")
               span.fad.fa-id-badge.mr-2
               strong ID: 
               span.text-primary #{record._id}
-            if (PASSWORD && PASSWORD.length)
-              li.list-group-item 
-                span.fad.fa-unlock.mr-2 
-                strong Password: 
-                span.text-primary #{PASSWORD}
-                span.text-muted.ml-5 (temporarily shown here)
             li.list-group-item 
-              span.fad.fa-key.mr-2
-              strong Key: 
-              span.text-primary #{record.password}
+              span.fad.fa-envelope.mr-2
+              strong Email: 
+              span.text-primary #{record.email}
           .my-2.pl-2
             a.card-link.btn.btn-warning(href="/members/"+record._id+"/edit" role="button") Edit
             form.d-inline(action="/members/"+record._id+"?_method=DELETE" method="post") 

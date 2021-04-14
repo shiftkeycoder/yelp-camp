@@ -20,44 +20,44 @@ html(lang="en")
               span.text-muted #{record.location}
             li.list-group-item $#{record.price}.00
           .card-body  
-            a.card-link.btn.btn-warning(href="/campsites/"+record._id+"/edit" role="button") Edit
-            form.d-inline(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
-              button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
+            if (user)
+              a.card-link.btn.btn-warning(href="/campsites/"+record._id+"/edit" role="button") Edit
+              form.d-inline(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
+                button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
       .col-4.mt-3.pt-5
-        h2 Leave a Review 
-        form.mb-3.validated-form(action="/campsites/"+record._id+"/reviews", method="post" novalidate) 
-          .mb-2
-            label.form-label(for="body") Review 
-            textarea#body.form-control(name="review[body]", cols="30", rows="3" required)
-            .valid-feedback 
-                p Looks good!
-            .invalid-feedback 
-              p This field is required
-          .mb-2
-            label.form-label(for="rating") Rating 
-            input#rating.form-range(type="range", name="review[rating]" min="1" max="5")
-          button.btn.btn-success(type="submit") Submit 
-        hr
-        - var alertOK =OK_MSG;
-        if (alertOK && alertOK.length)
-          .alert.alert-success.alert-dismissible.fade.show(role="alert")
-            strong #{OK_MSG}
-            button.close(type="button" data-dismiss="alert" aria-label="Close") 
-              span(aria-hidden="true") &times;
-        - var alertERROR =ERROR_MSG;
-        if (alertERROR && alertERROR.length)
-          .alert.alert-danger.alert-dismissible.fade.show(role="alert")
-            strong #{ERROR_MSG}
-            button.close(type="button" data-dismiss="alert" aria-label="Close") 
-              span(aria-hidden="true") &times;
-        .pt-3 
-          each review in record.reviews
-            .card.mb-3 
-              .card-body
-                h5.card-title 
-                  - for (var x=0; x < review.rating; x++) 
-                    span.fal.fa-star.text-warning 
-                p.card-text #{review.body}
-                form(action="/campsites/"+record._id+"/reviews/"+review._id+"?_method=DELETE", method="post") 
-                  button.btn.btn-sm.btn-danger Delete 
+        if (user)
+          h2 Leave a Review 
+          form.mb-3.validated-form(action="/campsites/"+record._id+"/reviews", method="post" novalidate) 
+            .mb-2
+              label.form-label(for="body") Review 
+              textarea#body.form-control(name="review[body]", cols="30", rows="3" required)
+              .valid-feedback 
+                  p Looks good!
+              .invalid-feedback 
+                p This field is required
+            .mb-2
+              label.form-label(for="rating") Rating 
+              input#rating.form-range(type="range", name="review[rating]" min="1" max="5")
+            button.btn.btn-success(type="submit") Submit 
+          hr
+          if (success && success.length)
+            .alert.alert-success.alert-dismissible.fade.show(role="alert")
+              strong #{success}
+              button.close(type="button" data-dismiss="alert" aria-label="Close") 
+                span(aria-hidden="true") &times;
+          if (error && error.length)
+            .alert.alert-danger.alert-dismissible.fade.show(role="alert")
+              strong #{error}
+              button.close(type="button" data-dismiss="alert" aria-label="Close") 
+                span(aria-hidden="true") &times;
+          .pt-3 
+            each review in record.reviews
+              .card.mb-3 
+                .card-body
+                  h5.card-title 
+                    - for (var x=0; x < review.rating; x++) 
+                      span.fal.fa-star.text-warning 
+                  p.card-text #{review.body}
+                  form(action="/campsites/"+record._id+"/reviews/"+review._id+"?_method=DELETE", method="post") 
+                    button.btn.btn-sm.btn-danger Delete 
     include ../lib/footer.pug 

@@ -8,10 +8,9 @@ html(lang="en")
     include ../lib/vendor.pug
     script(src=FORM) 
     include ../lib/header.pug
-    - var alertERROR =ERROR_MSG;
-    if (alertERROR && alertERROR.length)
+    if (error && error.length)
       .alert.alert-danger.alert-dismissible.fade.show(role="alert")
-        strong #{ERROR_MSG}
+        strong #{error}
         button.close(type="button" data-dismiss="alert" aria-label="Close") 
           span(aria-hidden="true") &times; 
     .container.my-5.pt-5  
@@ -22,14 +21,14 @@ html(lang="en")
         form.validated-form(action="/members/auth", method="post" novalidate) 
           .mb-3 
             label.form-label(for="username") Enter Username  
-            input.form-control(type="text" id="username" placeholder="username" name="member[username]" required)
+            input.form-control(type="text" id="username" placeholder="username" name="username" required)
             .valid-feedback 
               p Looks good!
             .invalid-feedback 
               p This field is required 
           .mb-3 
             label.form-label(for="password") Enter Password 
-            input.form-control(type="password" id="password" placeholder="password" name="member[password]" required)
+            input.form-control(type="password" id="password" placeholder="password" name="password" required)
             .valid-feedback 
               p Looks good!
             .invalid-feedback 

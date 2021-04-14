@@ -6,10 +6,9 @@ html(lang="en")
   body
     include ../lib/vendor.pug
     include ../lib/header.pug
-    - var alertOK =OK_MSG;
-    if (alertOK && alertOK.length)
+    if (success && success.length)
       .alert.alert-success.alert-dismissible.fade.show(role="alert")
-        strong #{OK_MSG}
+        strong #{success}
         button.close(type="button" data-dismiss="alert" aria-label="Close") 
           span(aria-hidden="true") &times;
     .container.my-5.pt-5

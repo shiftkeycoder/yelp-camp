@@ -12,11 +12,19 @@ html(lang="en")
           span.mr-3 ERROR
           span.fas.fa-exclamation-square 
         hr 
-        p.mb-0.text-center #{status} #{message}
-      .alert.alert-light(role="alert")
-        p.mb-1 
+        p.text-center 
           span.fas.fa-bug
           span.ml-1 #{ERROR_MSG}
+        
+      .alert.alert-light(role="alert")
+        .mb-1
+          p
+            strong Status Code: 
+            span #{status} 
+          p 
+            strong Error Message: 
+            span #{message}
         hr 
+        h5 Error Stack: 
         p.mb-1 #{stack}        
-    include ../lib/footer.pug 
+    include ../lib/footer.pug
