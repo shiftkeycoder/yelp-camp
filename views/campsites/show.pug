@@ -1,5 +1,5 @@
 - var ICON = "../icons/favicon.ico";
-- var CSS = "../main.cb6d322ebb9fa0dbd79f.css";
+- var CSS = "../main.a873567c294c371b65d4.css";
 - var FORM = "../form-validation.js";
 - var TITLE = "YelpCamp: Camp Detail";
 html(lang="en")
@@ -14,13 +14,14 @@ html(lang="en")
           img.card-img-top(src=record.image alt="campsite")
           .card-body
             h3.card-title #{record.title} 
-            p.card-text #{record.description}
+            p.card-text #{record.description}              
+            p.card-text.text-right.text-primary #{record.author.username}: #{record.author.email}
           ul.list-group.list-group-flush 
             li.list-group-item 
               span.text-muted #{record.location}
             li.list-group-item $#{record.price}.00
-          .card-body  
-            if (user)
+          if (user && token == adminToken)
+            .card-body  
               a.card-link.btn.btn-warning(href="/campsites/"+record._id+"/edit" role="button") Edit
               form.d-inline(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
                 button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
@@ -29,15 +30,25 @@ html(lang="en")
           h2 Leave a Review 
           form.mb-3.validated-form(action="/campsites/"+record._id+"/reviews", method="post" novalidate) 
             .mb-2
-              label.form-label(for="body") Review 
               textarea#body.form-control(name="review[body]", cols="30", rows="3" required)
               .valid-feedback 
                   p Looks good!
               .invalid-feedback 
                 p This field is required
             .mb-2
-              label.form-label(for="rating") Rating 
-              input#rating.form-range(type="range", name="review[rating]" min="1" max="5")
+              fieldset.starability-basic 
+                legend Rating 
+                input#no-rate.input-no-rate(type="radio" name="review[rating]" value="0" checked aria-label="No rating.")
+                label(for="rate1" title="Terrible") 1 star
+                input#rate1(type="radio" name="review[rating]" value="1")
+                label(for="rate2" title="Not good") 2 stars
+                input#rate2(type="radio" name="review[rating]" value="2")
+                label(for="rate3" title="Average") 3 stars
+                input#rate3(type="radio" name="review[rating]" value="3")
+                label(for="rate4" title="Very good") 4 stars
+                input#rate4(type="radio" name="review[rating]" value="4")
+                label(for="rate5" title="Amazing") 5 stars
+                input#rate5(type="radio" name="review[rating]" value="5")
             button.btn.btn-success(type="submit") Submit 
           hr
           if (success && success.length)
@@ -54,10 +65,10 @@ html(lang="en")
             each review in record.reviews
               .card.mb-3 
                 .card-body
-                  h5.card-title 
-                    - for (var x=0; x < review.rating; x++) 
-                      span.fal.fa-star.text-warning 
+                  h5.card-title #{review.author.username}
+                  p.starability-result.mb-3(data-rating =review.rating) Rated: #{review.rating} stars 
                   p.card-text #{review.body}
-                  form(action="/campsites/"+record._id+"/reviews/"+review._id+"?_method=DELETE", method="post") 
-                    button.btn.btn-sm.btn-danger Delete 
+                  if (token == adminToken)
+                    form(action="/campsites/"+record._id+"/reviews/"+review._id+"?_method=DELETE", method="post") 
+                      button.btn.btn-sm.btn-danger Delete 
     include ../lib/footer.pug 
