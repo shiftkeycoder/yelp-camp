@@ -11,21 +11,27 @@ html(lang="en")
     .container.my-5.pt-5  
       h1.text-center New Campsite 
       .col-6.offset-3  
-        form.validated-form(action="/campsites", method="post" novalidate) 
+        form.validated-form(enctype="multipart/form-data" action="/campsites", method="post" novalidate) 
           .mb-3 
-            label.form-label(for="title") Title
+            label.form-label(for="title") Campsite Title
             input.form-control(type="text" id="title" placeholder="Silent Creek" name="campsite[title]" required)
             .valid-feedback 
               p Looks good!
             .invalid-feedback 
               p This field is required 
-          .mb-3 
-            label.form-label(for="image") Image URL
-            input.form-control(type="text" id="image" placeholder="https://..." name="campsite[image]" required)
-            .valid-feedback 
-              p Looks good!
-            .invalid-feedback 
-              p This field is required
+          .mb-3
+            p Campsite Image
+            .input-group 
+              .input-group-prepend 
+                span#upload-prepend.input-group-text 
+                  span.fad.fa-cloud-upload 
+              .custom-file 
+                input#upload-input.custom-file-input(type="file" name="campsite[image]" aria-describedby="upload-prepend")
+                label.custom-file-label(for="upload-input") Select an image 
+                .valid-feedback 
+                  p Looks good!
+                .invalid-feedback 
+                  p This field is required
           .mb-3 
             label.form-label(for="price") Campsite Price
             .input-group 
@@ -38,14 +44,14 @@ html(lang="en")
               .invalid-feedback 
                 p This field is required
           .mb-3 
-            label.form-label(for="description") Description
+            label.form-label(for="description") Campsite Description
             textarea.form-control(cols="30", rows="5" type="text" id="description" name="campsite[description]" required)
             .valid-feedback 
               p Looks good!
             .invalid-feedback 
               p This field is required
           .mb-3 
-            label.form-label(for="location") Location
+            label.form-label(for="location") Campsite Location
             input.form-control(type="text" id="location" placeholder="Orlando, Florida" name="campsite[location]" required)
             .valid-feedback 
               p Looks good!

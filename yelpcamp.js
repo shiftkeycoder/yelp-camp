@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV !== "production") {
+  require('dotenv').config();
+}
 const svr = require('./lib/express');
 const Mongo = require('./lib/mongo');
 const mongo = new Mongo;

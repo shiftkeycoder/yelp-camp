@@ -13,23 +13,29 @@ html(lang="en")
         a(href="/campsites/"+record._id) 
           span.fal.fa-house-return.mr-2  
           span Back to Campsite 
-      form.validated-form(action="/campsites/"+record._id+"?_method=PUT", method="post" novalidate) 
+      form.validated-form(enctype="multipart/form-data" action="/campsites/"+record._id+"?_method=PUT", method="post" novalidate) 
         .mb-3 
-          label.form-label(for="title") Title
+          label.form-label(for="title") Campsite Title
           input.form-control(type="text" id="title" name="campsite[title]" value=record.title required)
           .valid-feedback 
               p Looks good!
           .invalid-feedback 
               p This field is required 
+        .mb-3
+            p Campsite Image
+            .input-group 
+              .input-group-prepend 
+                span#upload-prepend.input-group-text 
+                  span.fad.fa-cloud-upload 
+              .custom-file 
+                input#upload-input.custom-file-input(type="file" name="campsite[image]" aria-describedby="upload-prepend")
+                label.custom-file-label(for="upload-input") Select an image 
+                .valid-feedback 
+                  p Looks good!
+                .invalid-feedback 
+                  p This field is required
         .mb-3 
-          label.form-label(for="image") Image URL
-          input.form-control(type="text" id="image" name="campsite[image]" value=record.image required)
-          .valid-feedback 
-              p Looks good!
-          .invalid-feedback 
-              p This field is required 
-        .mb-3 
-          label.form-label(for="price") Price
+          label.form-label(for="price") Campsite Price
           .input-group 
               span.input-group-text(id="price-label") $
               input.form-control(type="text" id="price" name="campsite[price]" value=record.price required)
@@ -38,14 +44,14 @@ html(lang="en")
               .invalid-feedback 
                 p This field is required 
         .mb-3 
-          label.form-label(for="description") Description
+          label.form-label(for="description") Campsite Description
           textarea.form-control(cols="30", rows="5" type="text" id="description" name="campsite[description]" required) #{record.description}
           .valid-feedback 
             p Looks good!
           .invalid-feedback 
             p This field is required 
         .mb-3  
-          label.form-label(for="location") Location
+          label.form-label(for="location") Campsite Location
           input.form-control(type="text" id="location" name="campsite[location]" value=record.location required)
           .valid-feedback 
             p Looks good!
