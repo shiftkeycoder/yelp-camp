@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "location": "Garden Grove, California",
+    "geometry": {"type": "Point", "coordinates": [ -117.9464, 33.7746 ]}
+  },
+  {
+    "id": 2,
+    "location": "Twin Falls, Idaho",
+    "geometry": {"type": "Point", "coordinates": [ -114.6972, 42.2729 ]}
+  },
+  {
+    "id": 3,
+    "location": "Leesburg, Virginia",
+    "geometry": {"type": "Point", "coordinates": [-77.5645, 39.1154 ]}
+  },
+  {
+    "id": 4,
+    "location": "Vallejo, California",
+    "geometry": {"type": "Point", "coordinates": [ -122.2566, 38.1041 ]}
+  },
+  {
+    "id": 5,
+    "location": "Quincy, Massachusetts",
+    "geometry": {"type": "Point", "coordinates": [ -71.0023, 42.2529 ]}
+  },
+  {
+    "id": 6,
+    "location": "Battle Creek, Michigan",
+    "geometry": {"type": "Point", "coordinates": [-85.1824, 42.3193 ]}
+  },
+  {
+    "id": 7,
+    "location": "Hanover Park, Illinois",
+    "geometry": {"type": "Point", "coordinates": [-88.1451, 41.9995 ]}
+  },
+  {
+    "id": 8,
+    "location": "Sioux Falls, South Dakota",
+    "geometry": {"type": "Point", "coordinates": [-96.7003, 43.55 ]}
+  },
+  {
+    "id": 9,
+    "location": "Sierra Vista, Arizona",
+    "geometry": {"type": "Point", "coordinates": [-110.3037, 31.5545 ]}
+  },
+  {
+    "id": 10,
+    "location": "Oakland Park, Florida",
+    "geometry": {"type": "Point", "coordinates": [ -80.132, 26.1723 ]}
+  },
+  {
+    "id": 11,
+    "location": "Bedford, Texas",
+    "geometry": {"type": "Point", "coordinates": [-97.1431, 32.844 ]}
+  },
+  {
+    "id": 12,
+    "location": "Fort Collins, Colorado",
+    "geometry": {"type": "Point", "coordinates": [-105.0668, 40.5509]}
+  },
+  {
+    "id": 13,
+    "location": "Waterbury, Connecticut",
+    "geometry": {"type": "Point", "coordinates": [-73.0515, 41.5582 ]}
+  },
+  {
+    "id": 14,
+    "location": "Bismarck, North Dakota",
+    "geometry": {"type": "Point", "coordinates": [-100.7837, 46.8083 ]}
+  },
+  {
+    "id": 15,
+    "location": "Hendersonville, Tennessee",
+    "geometry": {"type": "Point", "coordinates": [ -86.62, 36.3048 ]}
+  },
+  {
+    "id": 16,
+    "location": "Paterson, New Jersey",
+    "geometry": {"type": "Point", "coordinates": [-74.1718, 40.9168 ]}
+  },
+  {
+    "id": 17,
+    "location": "San Buenaventura (Ventura), California",
+    "geometry": {"type": "Point", "coordinates": [-119.244, 34.2578 ]}
+  },
+  {
+    "id": 18,
+    "location": "Alpharetta, Georgia",
+    "geometry": {"type": "Point", "coordinates": [-84.2747, 34.071 ]}
+  },
+  {
+    "id": 19,
+    "location": "Okeechobee Florida",
+    "geometry": {"type": "Point", "coordinates": [-80.8298, 27.2439 ]}
+  },
+  {
+    "id": 20,
+    "location": "Westminster, Colorado",
+    "geometry": {"type": "Point", "coordinates": [-105.0372, 39.8367 ]}
+  },
+  {
+    "id": 21,
+    "location": "Springfield, Oregon",
+    "geometry": {"type": "Point", "coordinates": [-123.022, 44.0462 ]}
+  },
+  {
+    "id": 22,
+    "location": "Prescott, Arizona",
+    "geometry": {"type": "Point", "coordinates": [-112.4695, 34.5403 ]}
+  },
+  {
+    "id": 23,
+    "location": "Richardson, Texas",
+    "geometry": {"type": "Point", "coordinates": [-96.7297, 32.9482 ]}
+  },
+  {
+    "id": 24,
+    "location": "Farmington Hills, Michigan",
+    "geometry": {"type": "Point", "coordinates": [-83.3772, 42.4853 ]}
+  },
+  {
+    "id": 25,
+    "location": "Midwest city, Oklahoma",
+    "geometry": {"type": "Point", "coordinates": [ -97.3967, 35.4495 ]}
+  },
+  {
+    "id": 26,
+    "location": "Brookhaven, Georgia",
+    "geometry": {"type": "Point", "coordinates": [-84.3402, 33.8584 ]}
+  },
+  {
+    "id": 27,
+    "location": "Madera, California",
+    "geometry": {"type": "Point", "coordinates": [ -120.0595, 36.9623]}
+  },
+  {
+    "id": 28,
+    "location": "Federal Way, Washington",
+    "geometry": {"type": "Point", "coordinates": [-122.3393, 47.3135 ]}
+  },
+  {
+    "id": 29,
+    "location": "Savannah, Georgia",
+    "geometry": {"type": "Point", "coordinates": [-81.0998, 32.0835 ]}
+  },
+  {
+    "id": 30,
+    "location": "Downey, California",
+    "geometry": {"type": "Point", "coordinates": [ -118.1326, 33.94 ]}
+  },
+  {
+    "id": 31,
+    "location": "Westland, Michigan",
+    "geometry": {"type": "Point", "coordinates": [ -83.4005, 42.3238]}
+  },
+  {
+    "id": 32,
+    "location": "Rochester Hills, Michigan",
+    "geometry": {"type": "Point", "coordinates": [-83.1499, 42.6584 ]}
+  },
+  {
+    "id": 33,
+    "location": "Oceanside, California",
+    "geometry": {"type": "Point", "coordinates": [-117.3795, 33.1959 ]}
+  },
+  {
+    "id": 34,
+    "location": "Iowa city, Iowa",
+    "geometry": {"type": "Point", "coordinates": [-91.5299, 41.6613 ]}
+  },
+  {
+    "id": 35,
+    "location": "Martinez, California",
+    "geometry": {"type": "Point", "coordinates": [  -122.1341, 38.0194 ]}
+  },
+  {
+    "id": 36,
+    "location": "Newport Beach, California",
+    "geometry": {"type": "Point", "coordinates": [-117.9294, 33.617 ]}
+  },
+  {
+    "id": 37,
+    "location": "Eden Prairie, Minnesota",
+    "geometry": {"type": "Point", "coordinates": [-93.4708, 44.8547 ]}
+  },
+  {
+    "id": 38,
+    "location": "Cranston, Rhode Island",
+    "geometry": {"type": "Point", "coordinates": [ -71.4371, 41.781]}
+  },
+  {
+    "id": 39,
+    "location": "Bossier city, Louisiana",
+    "geometry": {"type": "Point", "coordinates": [-93.7321, 32.516 ]}
+  },
+  {
+    "id": 40,
+    "location": "Santa Clarita, California",
+    "geometry": {"type": "Point", "coordinates": [ -118.54, 34.42 ]}
+  },
+  {
+    "id": 41,
+    "location": "Wilmington, North Carolina",
+    "geometry": {"type": "Point", "coordinates": [-77.9447, 34.2257 ]}
+  },
+  {
+    "id": 42,
+    "location": "Blaine, Minnesota",
+    "geometry": {"type": "Point", "coordinates": [-93.2349, 45.1608 ]}
+  },
+  {
+    "id": 43,
+    "location": "Camden, New Jersey",
+    "geometry": {"type": "Point", "coordinates": [ -75.1199, 39.9448]}
+  },
+  {
+    "id": 44,
+    "location": "Evanston, Illinois",
+    "geometry": {"type": "Point", "coordinates": [-87.693, 42.0447 ]}
+  },
+  {
+    "id": 45,
+    "location": "Diamond Bar, California",
+    "geometry": {"type": "Point", "coordinates": [-117.8103, 34.0286 ]}
+  },
+  {
+    "id": 46,
+    "location": "Cambridge, Massachusetts",
+    "geometry": {"type": "Point", "coordinates": [-71.1056, 42.3751 ]}
+  },
+  {
+    "id": 47,
+    "location": "McKinney, Texas",
+    "geometry": {"type": "Point", "coordinates": [-96.64, 33.22 ]}
+  },
+  {
+    "id": 48,
+    "location": "Sheboygan, Wisconsin",
+    "geometry": {"type": "Point", "coordinates": [ -87.7145, 43.7508 ]}
+  },
+  {
+    "id": 49,
+    "location": "Waterloo, Iowa",
+    "geometry": {"type": "Point", "coordinates": [-92.3369, 42.4983 ]}
+  },
+  {
+    "id": 50,
+    "location": "Avon Park, Florida",
+    "geometry": {"type": "Point", "coordinates": [-81.5061, 27.5961 ]}
+  }
+]

@@ -26,6 +26,20 @@ html(lang="en")
               form.d-inline(action="/campsites/"+record._id+"?_method=DELETE" method="post") 
                 button.btn.btn-danger.my-2.my-sm-0(type="submit") Delete 
       .col-4.mt-3.pt-5
+        #map(style="width:600px; height:300px;")
+        script.
+           const token = "#{mapToken}";
+           const title = "#{record.title}";
+           const coordinates = JSON.stringify(#{record.geometry.coordinates});
+           mapboxgl.accessToken = token;
+           const map = new mapboxgl.Map({ container: 'map', style: 'mapbox://styles/mapbox/streets-v11', center: [#{record.geometry.coordinates}], zoom: 9   });
+           const marker = new mapboxgl.Marker()
+            .setLngLat([#{record.geometry.coordinates}])
+            .setPopup(
+              new mapboxgl.Popup({offset: 25})
+              .setHTML(`<h3>${title}</h3><p>${"#{record.location}"}</p>`)
+            )
+            .addTo(map);
         if (user)
           h2 Leave a Review 
           form.mb-3.validated-form(action="/campsites/"+record._id+"/reviews", method="post" novalidate) 
@@ -72,3 +86,4 @@ html(lang="en")
                     form(action="/campsites/"+record._id+"/reviews/"+review._id+"?_method=DELETE", method="post") 
                       button.btn.btn-sm.btn-danger Delete 
     include ../lib/footer.pug 
+      

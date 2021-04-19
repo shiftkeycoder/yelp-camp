@@ -3,7 +3,7 @@
     "_id": ObjectId("6068a4f6142eb85923564766"),
     "title": "Redwood Creek",
     "image": {
-        "url": "https://res.cloudinary.com/shiftkeycoder-org/image/upload/v1618684828/YelpCamp/enetkz0vta0e3dhttps://res.cloudinary.com/shiftkeycoder-org/image/upload/v1618690911/YelpCamp/campsite-1_fdgr59.jpg",
+        "url": "https://res.cloudinary.com/shiftkeycoder-org/image/upload/v1618690911/YelpCamp/campsite-1_fdgr59.jpg",
         "filename": "YelpCamp/campsite-1_fdgr59"
     },
     "price": 60,
@@ -15,7 +15,14 @@
         ObjectId("60796508dc24c32025879b48"), 
         ObjectId("60796e9d4508302aa8616a3c"), 
         ObjectId("6079d14149de49730807fdb7")
-    ]
+    ],
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -117.9464,
+            33.7746
+        ]
+    }
 }
 /* 2 */
 {
@@ -29,6 +36,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Twin Falls, Idaho",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -114.6972,
+            42.2729
+        ]
+    },
     "__v": 0
 }
 /* 3 */
@@ -43,6 +57,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Leesburg, Virginia",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -77.5645,
+            39.1154
+        ]
+    },
     "__v": 0
 }
 /* 4 */
@@ -57,6 +78,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Vallejo, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -122.2566,
+            38.1041
+        ]
+    },
     "__v": 0
 }
 /* 5 */
@@ -71,6 +99,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Quincy, Massachusetts",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -71.0023,
+            42.2529
+        ]
+    },
     "__v": 0
 }
 /* 6 */
@@ -85,6 +120,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Battle Creek, Michigan",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -85.1824,
+            42.3193
+        ]
+    },
     "__v": 0
 }
 /* 7 */
@@ -99,6 +141,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Hanover Park, Illinois",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -88.1451,
+            41.9995
+        ]
+    },
     "__v": 0
 }
 /* 8 */
@@ -113,6 +162,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Sioux Falls, South Dakota",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -96.7003,
+            43.55
+        ]
+    },
     "__v": 0
 }
 /* 9 */
@@ -127,6 +183,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Sierra Vista, Arizona",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -110.3037,
+            31.5545
+        ]
+    },
     "__v": 0
 }
 /* 10 */
@@ -141,6 +204,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Oakland Park, Florida",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -80.132,
+            26.1723
+        ]
+    },
     "__v": 0
 }
 /* 11 */
@@ -155,6 +225,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Bedford, Texas",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -97.1431,
+            32.844
+        ]
+    },
     "__v": 0
 }
 /* 12 */
@@ -169,6 +246,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Fort Collins, Colorado",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -105.0668,
+            40.5509
+        ]
+    },
     "__v": 0
 }
 /* 13 */
@@ -183,6 +267,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Waterbury, Connecticut",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -73.0515,
+            41.5582
+        ]
+    },
     "__v": 0
 }
 /* 14 */
@@ -197,6 +288,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Bismarck, North Dakota",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -100.7837,
+            46.8083
+        ]
+    },
     "__v": 0
 }
 /* 15 */
@@ -211,6 +309,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Hendersonville, Tennessee",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -86.62,
+            36.3048
+        ]
+    },
     "__v": 0
 }
 /* 16 */
@@ -225,6 +330,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Paterson, New Jersey",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -74.1718,
+            40.9168
+        ]
+    },
     "__v": 0
 }
 /* 17 */
@@ -239,6 +351,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "San Buenaventura (Ventura), California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -119.244,
+            34.2578
+        ]
+    },
     "__v": 0
 }
 /* 18 */
@@ -253,6 +372,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Alpharetta, Georgia",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -84.2747,
+            34.071
+        ]
+    },
     "__v": 0
 }
 /* 19 */
@@ -267,6 +393,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
     "location": "Okeechobee Florida",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -80.8298,
+            27.2439
+        ]
+    },
     "__v": 0
 }
 /* 20 */
@@ -281,6 +414,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Westminster, Colorado",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -105.0372,
+            39.8367
+        ]
+    },
     "__v": 0
 }
 /* 21 */
@@ -295,6 +435,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Springfield, Oregon",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -123.022,
+            44.0462
+        ]
+    },
     "__v": 0
 }
 /* 22 */
@@ -309,6 +456,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Prescott, Arizona",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -112.4695,
+            34.5403
+        ]
+    },
     "__v": 0
 }
 /* 23 */
@@ -323,6 +477,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Richardson, Texas",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -96.7297,
+            32.9482
+        ]
+    },
     "__v": 0
 }
 /* 24 */
@@ -337,6 +498,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Farmington Hills, Michigan",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -83.3772,
+            42.4853
+        ]
+    },
     "__v": 0
 }
 /* 25 */
@@ -351,6 +519,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Midwest city, Oklahoma",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -97.3967,
+            35.4495
+        ]
+    },
     "__v": 0
 }
 /* 26 */
@@ -365,6 +540,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Brookhaven, Georgia",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -84.3402,
+            33.8584
+        ]
+    },
     "__v": 0
 }
 /* 27 */
@@ -379,6 +561,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Madera, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -120.0595,
+            36.9623
+        ]
+    },
     "__v": 0
 }
 /* 28 */
@@ -393,6 +582,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Federal Way, Washington",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -122.3393,
+            47.3135
+        ]
+    },
     "__v": 0
 }
 /* 29 */
@@ -407,6 +603,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Savannah, Georgia",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -81.0998,
+            32.0835
+        ]
+    },
     "__v": 0
 }
 /* 30 */
@@ -421,6 +624,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Downey, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -118.1326,
+            33.94
+        ]
+    },
     "__v": 0
 }
 /* 31 */
@@ -435,6 +645,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Westland, Michigan",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -83.4005,
+            42.3238
+        ]
+    },
     "__v": 0
 }
 /* 32 */
@@ -449,6 +666,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Rochester Hills, Michigan",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -83.1499,
+            42.6584
+        ]
+    },
     "__v": 0
 }
 /* 33 */
@@ -463,6 +687,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Oceanside, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -117.3795,
+            33.1959
+        ]
+    },
     "__v": 0
 }
 /* 34 */
@@ -477,6 +708,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Iowa city, Iowa",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -91.5299,
+            41.6613
+        ]
+    },
     "__v": 0
 }
 /* 35 */
@@ -491,6 +729,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Martinez, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -122.1341,
+            38.0194
+        ]
+    },
     "__v": 0
 }
 /* 36 */
@@ -505,6 +750,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Newport Beach, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -117.9294,
+            33.617
+        ]
+    },
     "__v": 0
 }
 /* 37 */
@@ -519,6 +771,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Eden Prairie, Minnesota",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -93.4708,
+            44.8547
+        ]
+    },
     "__v": 0
 }
 /* 38 */
@@ -533,6 +792,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Cranston, Rhode Island",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -71.4371,
+            41.781
+        ]
+    },
     "__v": 0
 }
 /* 39 */
@@ -547,6 +813,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Bossier city, Louisiana",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -93.7321,
+            32.516
+        ]
+    },
     "__v": 0
 }
 /* 40 */
@@ -561,6 +834,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Santa Clarita, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -118.54,
+            34.42
+        ]
+    },
     "__v": 0
 }
 /* 41 */
@@ -575,6 +855,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Wilmington, North Carolina",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -77.9447,
+            34.2257
+        ]
+    },
     "__v": 0
 }
 /* 42 */
@@ -589,6 +876,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Blaine, Minnesota",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -93.2349,
+            45.1608
+        ]
+    },
     "__v": 0
 }
 /* 43 */
@@ -603,6 +897,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Camden, New Jersey",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -75.1199,
+            39.9448
+        ]
+    },
     "__v": 0
 }
 /* 44 */
@@ -617,6 +918,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Evanston, Illinois",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -87.693,
+            42.0447
+        ]
+    },
     "__v": 0
 }
 /* 45 */
@@ -631,6 +939,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Diamond Bar, California",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -117.8103,
+            34.0286
+        ]
+    },
     "__v": 0
 }
 /* 46 */
@@ -645,6 +960,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Cambridge, Massachusetts",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -71.1056,
+            42.3751
+        ]
+    },
     "__v": 0
 }
 /* 47 */
@@ -658,6 +980,13 @@
     "price": 13,
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "McKinney, Texas",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -96.64,
+            33.22
+        ]
+    },
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
     "__v": 3,
     "reviews": [ 
@@ -677,6 +1006,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Sheboygan, Wisconsin",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -87.7145,
+            43.7508
+        ]
+    },
     "__v": 0
 }
 /* 49 */
@@ -691,6 +1027,13 @@
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "location": "Waterloo, Iowa",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -92.3369,
+            42.4983
+        ]
+    },
     "__v": 0
 }
 /* 50 */
@@ -705,5 +1048,12 @@
     "description": "This campsite is in sunny Florida. Enjoy camping, fishing, and boating.\r\nprovides a beautiful vista in the great out doors. Great for weekend getaways. Friendly locals and not too far from town. Nearby stores that support an outdoor life style, just in case you've forgotten something.",
     "location": "Avon Park, Florida",
     "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -81.5061,
+            27.5961
+        ]
+    },
     "__v": 0
 }

@@ -1,0 +1,38 @@
+/* 1 */
+{
+  "_id": ObjectId("606a6407459be0474abab93b"),
+  "body": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat",
+  "rating": 3,
+  "__v": 0
+}
+/* 2 */
+{
+  "_id": ObjectId("606bb83d84e8caac7611b462"),
+  "body": "Great campsite but a little crowded.",
+  "rating": 3,
+  "__v": 0
+}
+/* 3 */
+{
+  "_id": ObjectId("60796508dc24c32025879b48"),
+  "body": "TEST",
+  "rating": 3,
+  "author": ObjectId("60735e9a28a6d19aeb7df1c9"),
+  "__v": 0
+}
+/* 4 */
+{
+  "_id": ObjectId("60796e9d4508302aa8616a3c"),
+  "body": "Test from Linus account",
+  "rating": 3,
+  "author": ObjectId("607627d883af90e60f4ff677"),
+  "__v": 0
+}
+/* 5 */
+{
+  "_id": ObjectId("6079d14149de49730807fdb7"),
+  "body": "TEST",
+  "rating": 1,
+  "author": ObjectId("607627d883af90e60f4ff677"),
+  "__v": 0
+}
