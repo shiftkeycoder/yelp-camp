@@ -16,10 +16,10 @@ html(lang="en")
             h3.card-title #{record.title} 
             p.card-text #{record.description}              
             p.card-text.text-right.text-primary #{record.author.username}: #{record.author.email}
-          ul.list-group.list-group-flush 
-            li.list-group-item 
-              span.text-muted #{record.location}
-            li.list-group-item $#{record.price}.00
+            ul.list-group.list-group-flush 
+              li.list-group-item 
+                span.text-muted #{record.location}
+              li.list-group-item $#{record.price}.00
           if (user && token == adminToken)
             .card-body  
               a.card-link.btn.btn-warning(href="/campsites/"+record._id+"/edit" role="button") Edit

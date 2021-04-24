@@ -42,6 +42,7 @@ const places = [
   'Cliffs',
   'Hollow'
 ]
-module.exports = { cities, places, descriptors };
+const cluster = require('./cluster.json');
+module.exports = { cities, places, descriptors, cluster };
 
 

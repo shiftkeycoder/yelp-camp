@@ -11,6 +11,10 @@ html(lang="en")
         strong #{success}
         button.close(type="button" data-dismiss="alert" aria-label="Close") 
           span(aria-hidden="true") &times;
+    #map.my-5.pt-5(style="width: 100%; height: 500px;") 
+    script. 
+      const token = "#{mapToken}"; 
+    script(src="cluster-map.js")
     .container.my-5.pt-5
       each record in data 
         .card.mb-3
@@ -25,3 +29,4 @@ html(lang="en")
                   small.text-muted #{record.location}
                 a.btn.btn-primary(href='/campsites/'+record._id) View #{record.title}
     include ../lib/footer.pug 
+    
