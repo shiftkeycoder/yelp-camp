@@ -25,6 +25,7 @@ html(lang="en")
             strong Error Message: 
             span #{message}
         hr 
-        h5 Error Stack: 
-        p.mb-1 #{stack}        
+        if (mode == "development")
+          h5 Error Stack: 
+          p.mb-1 #{stack}        
     include ../lib/footer.pug  
