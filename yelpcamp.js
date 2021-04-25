@@ -9,13 +9,11 @@ const routes = require('./lib/routes');
 const seedDB = require('./lib/seed');
 const {hashPWD, login} = require('./lib/bcrypt');
 
-if (NODE_ENV === "production") {
-  process.env.PORT = 8080;
-}
-else {
+if (NODE_ENV !== "production") {
   process.env.PORT = 3000;
   process.env.IP = 'localhost';
 }
+
 
 mongo.init();
 svr.init();
