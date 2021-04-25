@@ -1,8 +1,7 @@
-// if (process.env.NODE_ENV !== "production") {
-//   require('dotenv').config();
-// }
+if (process.env.NODE_ENV !== "production") {
+  require('dotenv').config();
+}
 const {NODE_ENV } = process.env;
-require('dotenv').config();
 const svr = require('./lib/express');
 const Mongo = require('./lib/mongo');
 const mongo = new Mongo;
@@ -12,7 +11,7 @@ const {hashPWD, login} = require('./lib/bcrypt');
 
 if (NODE_ENV === "production") {
   process.env.PORT = 8080;
-  process.env.IP = "https://dashboard.heroku.com/apps/mighty-brook-04089";
+  process.env.IP = "https://mighty-brook-04089.herokuapp.com/";
 }
 else {
   process.env.PORT = 3000;
