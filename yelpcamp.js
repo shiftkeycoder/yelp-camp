@@ -11,7 +11,7 @@ const {hashPWD, login} = require('./lib/bcrypt');
 
 if (NODE_ENV === "production") {
   process.env.PORT = 8080;
-  process.env.IP = "https://mighty-brook-04089.herokuapp.com/";
+  process.env.IP = "mighty-brook-04089";
 }
 else {
   process.env.PORT = 3000;
